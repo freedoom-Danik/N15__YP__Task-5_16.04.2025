@@ -74,7 +74,7 @@
                 "желтый"});
             this.toolStripComboBox1.Name = "toolStripComboBox1";
             this.toolStripComboBox1.Size = new System.Drawing.Size(121, 23);
-            this.toolStripComboBox1.SelectedIndexChanged += new System.EventHandler(this.toolStripComboBox1_SelectedIndexChanged);
+            this.toolStripComboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBoxColor_SelectedIndexChanged);
 
             // 
             // toolStripMenuItemRed
@@ -138,7 +138,7 @@
                 "желтый"});
             this.contextMenuStripComboBox.Name = "contextMenuStripComboBox";
             this.contextMenuStripComboBox.Size = new System.Drawing.Size(121, 23);
-            this.contextMenuStripComboBox.SelectedIndexChanged += new System.EventHandler(this.toolStripComboBox1_SelectedIndexChanged);
+            this.contextMenuStripComboBox.SelectedIndexChanged += new System.EventHandler(this.comboBoxColor_SelectedIndexChanged);
 
             // 
             // contextMenuStripTextBox1
@@ -146,7 +146,7 @@
             this.contextMenuStripTextBox1.Name = "contextMenuStripTextBox1";
             this.contextMenuStripTextBox1.Size = new System.Drawing.Size(100, 23);
             this.contextMenuStripTextBox1.Text = "0";
-            this.contextMenuStripTextBox1.TextChanged += new System.EventHandler(this.toolStripTextBox1_TextChanged);
+            this.contextMenuStripTextBox1.TextChanged += new System.EventHandler(this.textBoxRGB_TextChanged);
 
             // 
             // contextMenuStripTextBox2
@@ -154,7 +154,7 @@
             this.contextMenuStripTextBox2.Name = "contextMenuStripTextBox2";
             this.contextMenuStripTextBox2.Size = new System.Drawing.Size(100, 23);
             this.contextMenuStripTextBox2.Text = "0";
-            this.contextMenuStripTextBox2.TextChanged += new System.EventHandler(this.toolStripTextBox1_TextChanged);
+            this.contextMenuStripTextBox2.TextChanged += new System.EventHandler(this.textBoxRGB_TextChanged);
 
             // 
             // contextMenuStripTextBox3
@@ -162,7 +162,7 @@
             this.contextMenuStripTextBox3.Name = "contextMenuStripTextBox3";
             this.contextMenuStripTextBox3.Size = new System.Drawing.Size(100, 23);
             this.contextMenuStripTextBox3.Text = "0";
-            this.contextMenuStripTextBox3.TextChanged += new System.EventHandler(this.toolStripTextBox1_TextChanged);
+            this.contextMenuStripTextBox3.TextChanged += new System.EventHandler(this.textBoxRGB_TextChanged);
 
             // 
             // contextMenuStripSeparator
@@ -195,7 +195,7 @@
             this.toolStripTextBox1.Size = new System.Drawing.Size(100, 23);
             this.toolStripTextBox1.Text = "0";
             this.toolStripTextBox1.ToolTipText = "Красный";
-            this.toolStripTextBox1.TextChanged += new System.EventHandler(this.toolStripTextBox1_TextChanged);
+            this.toolStripTextBox1.TextChanged += new System.EventHandler(this.textBoxRGB_TextChanged);
 
             // 
             // toolStripTextBox2
@@ -204,7 +204,7 @@
             this.toolStripTextBox2.Size = new System.Drawing.Size(100, 23);
             this.toolStripTextBox2.Text = "0";
             this.toolStripTextBox2.ToolTipText = "Зеленый";
-            this.toolStripTextBox2.TextChanged += new System.EventHandler(this.toolStripTextBox1_TextChanged);
+            this.toolStripTextBox2.TextChanged += new System.EventHandler(this.textBoxRGB_TextChanged);
 
             // 
             // toolStripTextBox3
@@ -213,7 +213,7 @@
             this.toolStripTextBox3.Size = new System.Drawing.Size(100, 23);
             this.toolStripTextBox3.Text = "0";
             this.toolStripTextBox3.ToolTipText = "Синий";
-            this.toolStripTextBox3.TextChanged += new System.EventHandler(this.toolStripTextBox1_TextChanged);
+            this.toolStripTextBox3.TextChanged += new System.EventHandler(this.textBoxRGB_TextChanged);
 
             // 
             // Form1
