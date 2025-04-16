@@ -15,222 +15,181 @@
 
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.colorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
-            this.toolStripMenuItemRed = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItemGreen = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItemBlue = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip();
-            this.contextMenuStripComboBox = new System.Windows.Forms.ToolStripComboBox();
-            this.contextMenuStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
-            this.contextMenuStripTextBox2 = new System.Windows.Forms.ToolStripTextBox();
-            this.contextMenuStripTextBox3 = new System.Windows.Forms.ToolStripTextBox();
-            this.contextMenuStripSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.contextMenuStripExit = new System.Windows.Forms.ToolStripMenuItem();
-            this.buttonClose = new System.Windows.Forms.Button();
-            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStripTextBox2 = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStripTextBox3 = new System.Windows.Forms.ToolStripTextBox();
-
-            this.menuStrip1.SuspendLayout();
-            this.contextMenuStrip1.SuspendLayout();
-            this.SuspendLayout();
-
+            components = new System.ComponentModel.Container();
+            menuStrip1 = new MenuStrip();
+            colorToolStripMenuItem = new ToolStripMenuItem();
+            toolStripComboBox1 = new ToolStripComboBox();
+            toolStripMenuItemRed = new ToolStripMenuItem();
+            toolStripMenuItemGreen = new ToolStripMenuItem();
+            toolStripMenuItemBlue = new ToolStripMenuItem();
+            toolStripSeparator1 = new ToolStripSeparator();
+            exitToolStripMenuItem = new ToolStripMenuItem();
+            contextMenuStrip1 = new ContextMenuStrip(components);
+            contextMenuStripComboBox = new ToolStripComboBox();
+            contextMenuStripTextBox1 = new ToolStripTextBox();
+            contextMenuStripTextBox2 = new ToolStripTextBox();
+            contextMenuStripTextBox3 = new ToolStripTextBox();
+            contextMenuStripSeparator = new ToolStripSeparator();
+            contextMenuStripExit = new ToolStripMenuItem();
+            buttonClose = new Button();
+            toolStripTextBox1 = new ToolStripTextBox();
+            toolStripTextBox2 = new ToolStripTextBox();
+            toolStripTextBox3 = new ToolStripTextBox();
+            menuStrip1.SuspendLayout();
+            contextMenuStrip1.SuspendLayout();
+            SuspendLayout();
             // 
             // menuStrip1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-                this.colorToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
-            this.menuStrip1.TabIndex = 0;
-
+            menuStrip1.Items.AddRange(new ToolStripItem[] { colorToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(800, 24);
+            menuStrip1.TabIndex = 0;
             // 
             // colorToolStripMenuItem
             // 
-            this.colorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-                this.toolStripComboBox1,
-                this.toolStripMenuItemRed,
-                this.toolStripMenuItemGreen,
-                this.toolStripMenuItemBlue,
-                this.toolStripSeparator1,
-                this.exitToolStripMenuItem});
-            this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
-            this.colorToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
-            this.colorToolStripMenuItem.Text = "&Color";
-
+            colorToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { toolStripComboBox1, toolStripMenuItemRed, toolStripMenuItemGreen, toolStripMenuItemBlue, toolStripSeparator1, exitToolStripMenuItem });
+            colorToolStripMenuItem.Name = "colorToolStripMenuItem";
+            colorToolStripMenuItem.Size = new Size(48, 20);
+            colorToolStripMenuItem.Text = "&Color";
             // 
             // toolStripComboBox1
             // 
-            this.toolStripComboBox1.Items.AddRange(new object[] {
-                "белый",
-                "красный",
-                "черный",
-                "синий",
-                "желтый"});
-            this.toolStripComboBox1.Name = "toolStripComboBox1";
-            this.toolStripComboBox1.Size = new System.Drawing.Size(121, 23);
-            this.toolStripComboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBoxColor_SelectedIndexChanged);
-
+            toolStripComboBox1.Items.AddRange(new object[] { "белый", "красный", "черный", "синий", "желтый" });
+            toolStripComboBox1.Name = "toolStripComboBox1";
+            toolStripComboBox1.Size = new Size(121, 23);
+            toolStripComboBox1.SelectedIndexChanged += comboBoxColor_SelectedIndexChanged;
             // 
             // toolStripMenuItemRed
             // 
-            this.toolStripMenuItemRed.Name = "toolStripMenuItemRed";
-            this.toolStripMenuItemRed.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItemRed.Text = "Красный";
-            this.toolStripMenuItemRed.Click += new System.EventHandler(this.toolStripMenuItemRed_Click);
-
+            toolStripMenuItemRed.Name = "toolStripMenuItemRed";
+            toolStripMenuItemRed.Size = new Size(181, 22);
+            toolStripMenuItemRed.Text = "Красный";
+            toolStripMenuItemRed.Click += toolStripMenuItemRed_Click;
             // 
             // toolStripMenuItemGreen
             // 
-            this.toolStripMenuItemGreen.Name = "toolStripMenuItemGreen";
-            this.toolStripMenuItemGreen.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItemGreen.Text = "Зеленый";
-            this.toolStripMenuItemGreen.Click += new System.EventHandler(this.toolStripMenuItemGreen_Click);
-
+            toolStripMenuItemGreen.Name = "toolStripMenuItemGreen";
+            toolStripMenuItemGreen.Size = new Size(181, 22);
+            toolStripMenuItemGreen.Text = "Зеленый";
+            toolStripMenuItemGreen.Click += toolStripMenuItemGreen_Click;
             // 
             // toolStripMenuItemBlue
             // 
-            this.toolStripMenuItemBlue.Name = "toolStripMenuItemBlue";
-            this.toolStripMenuItemBlue.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItemBlue.Text = "Синий";
-            this.toolStripMenuItemBlue.Click += new System.EventHandler(this.toolStripMenuItemBlue_Click);
-
+            toolStripMenuItemBlue.Name = "toolStripMenuItemBlue";
+            toolStripMenuItemBlue.Size = new Size(181, 22);
+            toolStripMenuItemBlue.Text = "Синий";
+            toolStripMenuItemBlue.Click += toolStripMenuItemBlue_Click;
             // 
             // toolStripSeparator1
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
-
+            toolStripSeparator1.Name = "toolStripSeparator1";
+            toolStripSeparator1.Size = new Size(178, 6);
             // 
             // exitToolStripMenuItem
             // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.exitToolStripMenuItem.Text = "E&xit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitApplication);
-
+            exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            exitToolStripMenuItem.Size = new Size(181, 22);
+            exitToolStripMenuItem.Text = "E&xit";
+            exitToolStripMenuItem.Click += ExitApplication;
             // 
             // contextMenuStrip1
             // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-                this.contextMenuStripComboBox,
-                this.contextMenuStripTextBox1,
-                this.contextMenuStripTextBox2,
-                this.contextMenuStripTextBox3,
-                this.contextMenuStripSeparator,
-                this.contextMenuStripExit});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 126);
-
+            contextMenuStrip1.Items.AddRange(new ToolStripItem[] { contextMenuStripComboBox, contextMenuStripTextBox1, contextMenuStripTextBox2, contextMenuStripTextBox3, contextMenuStripSeparator, contextMenuStripExit });
+            contextMenuStrip1.Name = "contextMenuStrip1";
+            contextMenuStrip1.Size = new Size(182, 134);
             // 
             // contextMenuStripComboBox
             // 
-            this.contextMenuStripComboBox.Items.AddRange(new object[] {
-                "белый",
-                "красный",
-                "черный",
-                "синий",
-                "желтый"});
-            this.contextMenuStripComboBox.Name = "contextMenuStripComboBox";
-            this.contextMenuStripComboBox.Size = new System.Drawing.Size(121, 23);
-            this.contextMenuStripComboBox.SelectedIndexChanged += new System.EventHandler(this.comboBoxColor_SelectedIndexChanged);
-
+            contextMenuStripComboBox.Items.AddRange(new object[] { "белый", "красный", "черный", "синий", "желтый" });
+            contextMenuStripComboBox.Name = "contextMenuStripComboBox";
+            contextMenuStripComboBox.Size = new Size(121, 23);
+            contextMenuStripComboBox.SelectedIndexChanged += comboBoxColor_SelectedIndexChanged;
             // 
             // contextMenuStripTextBox1
             // 
-            this.contextMenuStripTextBox1.Name = "contextMenuStripTextBox1";
-            this.contextMenuStripTextBox1.Size = new System.Drawing.Size(100, 23);
-            this.contextMenuStripTextBox1.Text = "0";
-            this.contextMenuStripTextBox1.TextChanged += new System.EventHandler(this.textBoxRGB_TextChanged);
-
+            contextMenuStripTextBox1.Name = "contextMenuStripTextBox1";
+            contextMenuStripTextBox1.Size = new Size(100, 23);
+            contextMenuStripTextBox1.Text = "0";
+            //contextMenuStripTextBox1.TextChanged += textBoxRGB_TextChanged;
             // 
             // contextMenuStripTextBox2
             // 
-            this.contextMenuStripTextBox2.Name = "contextMenuStripTextBox2";
-            this.contextMenuStripTextBox2.Size = new System.Drawing.Size(100, 23);
-            this.contextMenuStripTextBox2.Text = "0";
-            this.contextMenuStripTextBox2.TextChanged += new System.EventHandler(this.textBoxRGB_TextChanged);
-
+            contextMenuStripTextBox2.Name = "contextMenuStripTextBox2";
+            contextMenuStripTextBox2.Size = new Size(100, 23);
+            contextMenuStripTextBox2.Text = "0";
+            //contextMenuStripTextBox2.TextChanged += textBoxRGB_TextChanged;
             // 
             // contextMenuStripTextBox3
             // 
-            this.contextMenuStripTextBox3.Name = "contextMenuStripTextBox3";
-            this.contextMenuStripTextBox3.Size = new System.Drawing.Size(100, 23);
-            this.contextMenuStripTextBox3.Text = "0";
-            this.contextMenuStripTextBox3.TextChanged += new System.EventHandler(this.textBoxRGB_TextChanged);
-
+            contextMenuStripTextBox3.Name = "contextMenuStripTextBox3";
+            contextMenuStripTextBox3.Size = new Size(100, 23);
+            contextMenuStripTextBox3.Text = "0";
+            //contextMenuStripTextBox3.TextChanged += textBoxRGB_TextChanged;
             // 
             // contextMenuStripSeparator
             // 
-            this.contextMenuStripSeparator.Name = "contextMenuStripSeparator";
-            this.contextMenuStripSeparator.Size = new System.Drawing.Size(177, 6);
-
+            contextMenuStripSeparator.Name = "contextMenuStripSeparator";
+            contextMenuStripSeparator.Size = new Size(178, 6);
             // 
             // contextMenuStripExit
             // 
-            this.contextMenuStripExit.Name = "contextMenuStripExit";
-            this.contextMenuStripExit.Size = new System.Drawing.Size(180, 22);
-            this.contextMenuStripExit.Text = "E&xit";
-            this.contextMenuStripExit.Click += new System.EventHandler(this.ExitApplication);
-
+            contextMenuStripExit.Name = "contextMenuStripExit";
+            contextMenuStripExit.Size = new Size(181, 22);
+            contextMenuStripExit.Text = "E&xit";
+            contextMenuStripExit.Click += ExitApplication;
             // 
             // buttonClose
             // 
-            this.buttonClose.Location = new System.Drawing.Point(10, 400);
-            this.buttonClose.Name = "buttonClose";
-            this.buttonClose.Size = new System.Drawing.Size(75, 23);
-            this.buttonClose.Text = "Close";
-            this.buttonClose.UseVisualStyleBackColor = true;
-            this.buttonClose.Click += new System.EventHandler(this.ExitApplication);
-
+            buttonClose.Location = new Point(12, 462);
+            buttonClose.Margin = new Padding(4, 3, 4, 3);
+            buttonClose.Name = "buttonClose";
+            buttonClose.Size = new Size(88, 27);
+            buttonClose.TabIndex = 1;
+            buttonClose.Text = "Close";
+            buttonClose.UseVisualStyleBackColor = true;
+            buttonClose.Click += ExitApplication;
             // 
             // toolStripTextBox1
             // 
-            this.toolStripTextBox1.Name = "toolStripTextBox1";
-            this.toolStripTextBox1.Size = new System.Drawing.Size(100, 23);
-            this.toolStripTextBox1.Text = "0";
-            this.toolStripTextBox1.ToolTipText = "Красный";
-            this.toolStripTextBox1.TextChanged += new System.EventHandler(this.textBoxRGB_TextChanged);
-
+            toolStripTextBox1.Name = "toolStripTextBox1";
+            toolStripTextBox1.Size = new Size(100, 23);
+            toolStripTextBox1.Text = "0";
+            toolStripTextBox1.ToolTipText = "Красный";
+            //toolStripTextBox1.TextChanged += textBoxRGB_TextChanged;
             // 
             // toolStripTextBox2
             // 
-            this.toolStripTextBox2.Name = "toolStripTextBox2";
-            this.toolStripTextBox2.Size = new System.Drawing.Size(100, 23);
-            this.toolStripTextBox2.Text = "0";
-            this.toolStripTextBox2.ToolTipText = "Зеленый";
-            this.toolStripTextBox2.TextChanged += new System.EventHandler(this.textBoxRGB_TextChanged);
-
+            toolStripTextBox2.Name = "toolStripTextBox2";
+            toolStripTextBox2.Size = new Size(100, 23);
+            toolStripTextBox2.Text = "0";
+            toolStripTextBox2.ToolTipText = "Зеленый";
+            //toolStripTextBox2.TextChanged += textBoxRGB_TextChanged;
             // 
             // toolStripTextBox3
             // 
-            this.toolStripTextBox3.Name = "toolStripTextBox3";
-            this.toolStripTextBox3.Size = new System.Drawing.Size(100, 23);
-            this.toolStripTextBox3.Text = "0";
-            this.toolStripTextBox3.ToolTipText = "Синий";
-            this.toolStripTextBox3.TextChanged += new System.EventHandler(this.textBoxRGB_TextChanged);
-
+            toolStripTextBox3.Name = "toolStripTextBox3";
+            toolStripTextBox3.Size = new Size(100, 23);
+            toolStripTextBox3.Text = "0";
+            toolStripTextBox3.ToolTipText = "Синий";
+            //toolStripTextBox3.TextChanged += textBoxRGB_TextChanged;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.buttonClose);
-            this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.contextMenuStrip1.ResumeLayout(false);
-            this.contextMenuStrip1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(933, 519);
+            Controls.Add(buttonClose);
+            MainMenuStrip = menuStrip1;
+            Margin = new Padding(4, 3, 4, 3);
+            Name = "Form1";
+            Text = "Form1";
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            contextMenuStrip1.ResumeLayout(false);
+            contextMenuStrip1.PerformLayout();
+            ResumeLayout(false);
         }
 
         private System.Windows.Forms.MenuStrip menuStrip1;
